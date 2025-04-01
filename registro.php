@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-$conexion = new mysqli("localhost", "root", "", "mi_sistema");
+$conexion = new mysqli("localhost", "u178928053_giuli", "5yS[!~b[Acq&", "u178928053_potaxies");
 
 if ($conexion->connect_error) {
     echo json_encode(["respuesta" => "error", "mensaje" => "Error de conexión a la base de datos."]);
