@@ -4,7 +4,7 @@ include 'conexion.php';
 // ELIMINAR USUARIO
 if (isset($_GET['eliminar'])) {
     $id = intval($_GET['eliminar']);
-    $conn->query("DELETE FROM usuario WHERE id = $id") or die($conn->error);
+    $conn->query("DELETE FROM usuarios WHERE id = $id") or die($conn->error);
     header("Location: gestionar_usuarios.php");
     exit;
 }
@@ -15,13 +15,13 @@ if (isset($_POST['actualizar'])) {
     $nombre  = $conn->real_escape_string($_POST['nombre']);
     $correo  = $conn->real_escape_string($_POST['correo']);
 
-    $conn->query("UPDATE usuario SET nombre='$nombre', correo='$correo' WHERE id=$id") or die($conn->error);
+    $conn->query("UPDATE usuarios SET nombre='$nombre', correo='$correo' WHERE id=$id") or die($conn->error);
     header("Location: gestionar_usuarios.php");
     exit;
 }
 
 // OBTENER USUARIOS
-$resultado = $conn->query("SELECT * FROM usuario") or die($conn->error);
+$resultado = $conn->query("SELECT * FROM usuarios") or die($conn->error);
 ?>
 
 <!DOCTYPE html>
