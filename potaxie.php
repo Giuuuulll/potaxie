@@ -41,8 +41,8 @@ if (!isset($_SESSION['usuario'])) {
             text-shadow: 2px 2px 4px black;
             margin-bottom: 20px;
         }
+        
 
-       
         p {
             font-size: 20px;
             background: rgba(0, 0, 0, 0.5); 
@@ -53,11 +53,11 @@ if (!isset($_SESSION['usuario'])) {
 
         
         .logout-btn {
-            position: absolute;
-            bottom: 20px;
+            position: abstract;
+            bottom: 40px;
             left: 20px;
-            padding: 12px 24px;
-            font-size: 18px;
+            padding: 12px 40px;
+            font-size: 30px;
             font-weight: bold;
             background-color: darkgreen;
             color: white;
@@ -114,6 +114,8 @@ Alrededor de febrero de 2022, el himno cambió de la cumbia de El Juego del Cala
 Tan solo un mes después, en marzo de 2022, las potaxies ya causaban furor en la comunidad hispanohablante de TikTok, ya que muchos usuarios desconocidos con este humor se sentían abrumados por la constante pregunta en TikTok: "¿Eres potaxie o fife?", así como por la excesiva cantidad de emojis de aguacate y mujeres chinas en su página "Para Ti". El auge de las potaxies se produjo entre marzo y septiembre de 2022, aunque se siguen publicando vídeos famosos de humor sobre ellas. Además, el panteón de diosas o ídolos potaxies creció, incluyendo a Ternura68, Anekakaenekulo, Luz María, la influencer dominicana Potassium, Nicki Minaj, Reyna Monarkita e incluso, para algunos, Cupcakke.
 
 La cantante Jennifer López es una aliada de los Potaxies, habiendo explicado quiénes son y creando conciencia.</p>
+
+    <a href="gestionar_usuarios.php">Gestionar Usuarios</a>
 
   
     <a href="logout.php" class="logout-btn">Cerrar sesión</a>
